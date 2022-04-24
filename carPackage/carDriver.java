@@ -6,8 +6,16 @@ public class carDriver {
 		
 		sportsCar ferrari = new sportsCar(1500, "Miami Blue",
 				"UEP-4590");
-		System.out.println("Mileage: " + ferrari.getMileage());
+		sportsCar lamborghini = ferrari.clone();
+
+		ferrari.setMileage(36000);
+		System.out.println("Ferrari Mileage: " + ferrari.getMileage());
 		
+		
+		System.out.println(ferrari.toString());
+		System.out.println(lamborghini.toString());
+		System.out.println("Lamborghini Mileage: " + lamborghini.getMileage());
+
 	}
 	
 	/*
